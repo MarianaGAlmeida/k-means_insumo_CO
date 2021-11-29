@@ -23,3 +23,6 @@ df_medias.head()
 grafico = px.histogram(df_medias, x="Part_Perc_P", color="EMPRESA")
 grafico.show()
 ```
+
+![Sem título](https://user-images.githubusercontent.com/93783315/143925356-99b3adb3-0b63-46f9-887f-007f5df481ca.png)
+
