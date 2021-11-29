@@ -1,4 +1,4 @@
-# k-means_insumo_CO
+# Análise do INSUMO (input) custos operacionais (CO)
 
 Em R: Uso do k-means como forma de agrupamento para análise das distribuidoras de acordo com a composição do insumo "custos operacionais reais".
 
