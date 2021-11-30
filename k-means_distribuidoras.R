@@ -7,7 +7,7 @@ setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 ## setwd("C:\\exemplo")
 
 ## ENTRADA DE DADOS (de acordo como o código em R do modelo DEA disponibilizado pela ANEEL) ##
-dados<-read.table("k-means_Distrib.csv",header=T,sep=";",na.strings="ND",stringsAsFactors = F)
+dados<-read.table("k-means_base_dados.csv",header=T,sep=";",na.strings="ND",stringsAsFactors = F)
 for (i in 5:ncol(dados))
 {
   dados[,i]<-as.numeric(dados[,i])
