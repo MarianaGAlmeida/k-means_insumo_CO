@@ -7,7 +7,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-df_medias = pd.read_csv ('MEDIAS_16_18.csv', sep=';', na_values='ND')
+df_medias = pd.read_csv ('k-means_base_dados.csv', sep=';', na_values='ND')
 
 
 ## Adicionar coluna com a participação percentual da componente P (Pessoal) nos custos operacionais
