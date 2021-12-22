@@ -42,30 +42,3 @@ write_xlsx(CLUSTER_3,"Cluster3.xlsx")
 
 ```
 
-
-##
-
-Em Python: análise alternativa ao k-means:
-```py
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-import plotly.express as px
-
-df_medias = pd.read_csv ('MEDIAS_16_18.csv', sep=';', na_values='ND')
-
-
-## Adicionar coluna com a participação percentual da componente P (Pessoal) nos custos operacionais
-df_medias['Part_Perc_P'] = df_medias['X18.2.Pessoal'] / df_medias['X18.1.Custos_Operacionais']
-df_medias.head()
-
-
-## Alternativa ao k-means : histograma com distribuidoras identificáveis
-## mover mouse sobre o gráfico
-grafico = px.histogram(df_medias, x="Part_Perc_P", color="EMPRESA")
-grafico.show()
-```
-
-![Sem título](https://user-images.githubusercontent.com/93783315/143925356-99b3adb3-0b63-46f9-887f-007f5df481ca.png)
-
